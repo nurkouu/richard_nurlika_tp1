@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "avatarFont";
+    src: url("./assets/fonts/Avatar_Water.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.avatar-title {
+    font-family: "avatarFont", sans-serif;
+    font-size: 3rem;
+}

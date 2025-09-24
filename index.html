@@ -12,11 +12,12 @@
 
 <body>
     <header>
-        <img src="./assets/img/avatar-banner_1.png" id="img-banner" class="img-fluid"
+        <img src="./assets/img/avatar-banner_2.png" id="img-banner" class="img-fluid"
             alt="Image de la forêt dans le film Avatar"></img>
     </header>
 
     <div class="container bg-secondary">
+        <!-- Mini intro -->
         <div class="row mt-5 ">
             <div class="col-8 offset-2 bg-primary fs-5 text-center">
                 «Avatar : The way of the water » reprend l’histoire de Jake et Neytiri, mais cette fois ils ont
@@ -26,6 +27,7 @@
             </div>
         </div>
 
+        <!-- Section Lieux + Description -->
         <div class="row mt-5 bg-danger">
             <div class="col-1 text-center pb-1 rounded-3 text-bg-warning fs-4 offset-1">Lieux</div>
         </div>
@@ -55,10 +57,12 @@
             </div>
         </div>
 
+        <!-- Section personnage + Description -->
         <div class="row mt-5 bg-danger">
             <div class="col-2 text-center pb-1 rounded-3 text-bg-warning fs-4 offset-1">Personnages</div>
         </div>
 
+        <!-- Caroussel pour les personnages -->
         <div class="row bg-success d-flex justify-content-center">
             <div class="col-8 mt-5">
 
@@ -87,8 +91,13 @@
                             <img src="./assets/img/jake-03.jpg" class="d-block img-fluid w-100 rounded-3"
                                 alt="Image de Jake Sully">
                             <div class="carousel-caption d-none d-sm-block bg-info">
-                                <p class="h5 text-light">Jake (Majake)</p>
-                                <p class="text-light">Source : 4K wallpapers</p>
+                                <p class="h5 text-light">Jake (Majake) Sully</p>
+                                <em class="text-light d-flex justify-content-center">Source : 4K wallpapers</em>
+
+                                <button type="button" class="btn btn-warning mt-2 " data-bs-toggle="modal"
+                                    data-bs-target="#jakeModal">
+                                    En savoir plus sur Jake
+                                </button>
                             </div>
                         </div>
 
@@ -97,7 +106,12 @@
                                 alt="Image de Neytiri">
                             <div class="carousel-caption d-none d-sm-block bg-info">
                                 <p class="h5 text-light">Neytiri</p>
-                                <p class="text-light">Source : Prime Video</p>
+                                <em class="text-light d-flex justify-content-center">Source : Prime Video</em>
+
+                                <button type="button" class="btn btn-warning mt-2" data-bs-toggle="modal"
+                                    data-bs-target="#neytiriModal">
+                                    En savoir plus sur Neytiri
+                                </button>
                             </div>
                         </div>
 
@@ -106,7 +120,12 @@
                                 alt="Image de Neteyam">
                             <div class="carousel-caption d-none d-sm-block bg-info">
                                 <p class="h5 text-light">Neteyam</p>
-                                <p class="text-light">Source : DeviantArt</p>
+                                <em class="text-light d-flex justify-content-center">Source : DeviantArt</em>
+
+                                <button type="button" class="btn btn-warning mt-2" data-bs-toggle="modal"
+                                    data-bs-target="#neteyamModal">
+                                    En savoir plus sur Neteyam
+                                </button>
                             </div>
                         </div>
 
@@ -114,7 +133,12 @@
                             <img src="./assets/img/loak-02.webp" class="d-block w-100 rounded-3" alt="Image de Lo'ak">
                             <div class="carousel-caption d-none d-sm-block bg-info">
                                 <p class="h5 text-light">Lo'ak</p>
-                                <p class="text-light">Source : JoBlo</p>
+                                <em class="text-light d-flex justify-content-center">Source : JoBlo</em>
+
+                                <button type="button" class="btn btn-warning mt-2" data-bs-toggle="modal"
+                                    data-bs-target="#loakModal">
+                                    En savoir plus sur Lo'ak
+                                </button>
                             </div>
                         </div>
 
@@ -122,7 +146,7 @@
                             <img src="./assets/img/kiri-01.webp" class="d-block w-100 rounded-3" alt="Image de Kiri">
                             <div class="carousel-caption d-none d-sm-block bg-info">
                                 <p class="h5 text-light">Kiri</p>
-                                <p class="text-light">Source : Mashable</p>
+                                <em class="text-light d-flex justify-content-center">Source : Mashable</em>
                             </div>
                         </div>
 
@@ -130,7 +154,7 @@
                             <img src="./assets/img/tuk-02.webp" class="d-block w-100 rounded-3" alt="Image de Tuk">
                             <div class="carousel-caption d-none d-sm-block bg-info">
                                 <p class="h5 text-light">Tuk</p>
-                                <p class="text-light">Source : Vanity Fair</p>
+                                <em class="text-light d-flex justify-content-center">Source : Vanity Fair</em>
                             </div>
                         </div>
 
@@ -138,7 +162,7 @@
                             <img src="./assets/img/spider-01.jpg" class="d-block w-100 rounded-3" alt="Image de Spider">
                             <div class="carousel-caption d-none d-sm-block bg-info">
                                 <p class="h5 text-light">Spider</p>
-                                <p class="text-light">Source : D23</p>
+                                <em class="text-light d-flex justify-content-center">Source : D23</em>
                             </div>
                         </div>
 
@@ -147,7 +171,8 @@
                                 alt="Image de Quaritch">
                             <div class="carousel-caption d-none d-sm-block bg-info">
                                 <p class="h5 text-light">Quaritch</p>
-                                <p class="text-light">Source : The Hollywood Reporter</p>
+                                <em class="text-light d-flex justify-content-center">Source : The Hollywood
+                                    Reporter</em>
                             </div>
                         </div>
                     </div>
@@ -163,9 +188,141 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-
-
             </div>
+
+            <!-- Modal pour Jake -->
+            <div class="modal fade" id="jakeModal" tabindex="-1" aria-labelledby="jakeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content bg-dark text-light">
+                        <!-- Header du modal -->
+                        <div class="modal-header">
+                            <p class="modal-title h5" id="jakeModalLabel">Jake Sully</p>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <!-- Body du modal -->
+                        <div class="modal-body">
+                            <img src="./assets/img/jake-02.jpg" class="img-fluid rounded-3 mb-3" alt="Jake Sully">
+                            <p class="fs-5">
+                                Jake Sully, c’est un ancien Marine qui est devenu Na’vi grâce à son avatar.
+                                Courageux et protecteur, il est toujours là pour sa famille et son clan.
+                                Comme père, il pense d’abord aux siens et garde la tête froide même quand ça devient
+                                difficile.
+                                Avec son cœur et sa détermination, il s’impose comme un vrai leader.
+                            </p>
+                            <em class="">Source : Empire</em>
+                        </div>
+                        <!-- Footer du modal -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal pour Neytiri-->
+            <div class="modal fade" id="neytiriModal" tabindex="-1" aria-labelledby="neytiriModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content bg-dark text-light">
+                        <!-- Header du modal -->
+                        <div class="modal-header">
+                            <p class="modal-title h5" id="neytiriModalLabel">Neytiri</p>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <!-- Body du modal -->
+                        <div class="modal-body">
+                            <img src="./assets/img/neytiri-03.jpg" class="img-fluid rounded-3 mb-3" alt="Neytiri">
+                            <p class="fs-5">
+                                Neytiri est la fille du chef du clan Omaticaya et la compagne de Jake Sully.
+                                Elle est une guerrière puissante et une guide spirituelle pour son peuple.
+                                Loyale, courageuse et profondément liée à Pandora, elle se bat toujours
+                                pour protéger sa famille, son clan et la nature sacrée d’Eywa.
+                            </p>
+                            <em class="">Source : Pinterest</em>
+                        </div>
+                        <!-- Footer du modal -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Modal pour Neteyam -->
+            <div class="modal fade" id="neteyamModal" tabindex="-1" aria-labelledby="neteyamModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content bg-dark text-light">
+                        <!-- Header du modal -->
+                        <div class="modal-header">
+                            <p class="modal-title h5" id="neteyamModalLabel">Neteyam</p>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <!-- Body du modal -->
+                        <div class="modal-body">
+                            <img src="./assets/img/neteyam-03.jpg" class="img-fluid rounded-3 mb-3" width="100%"
+                                alt="Neteyam">
+                            <p class="fs-5">
+                                Neteyam est le fils aîné de Jake Sully et Neytiri. Courageux et curieux, il suit les pas
+                                de ses parents
+                                tout en apprenant à protéger son clan. Très attaché à sa famille et à la nature de
+                                Pandora,
+                                il développe ses propres compétences de guerrier et devient un jeune leader respecté.
+                            </p>
+                            <em class="">Source : Whatthemovie</em>
+                        </div>
+                        <!-- Footer du modal -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Modal pour Lo'ak -->
+            <div class="modal fade" id="loakModal" tabindex="-1" aria-labelledby="loakModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content bg-dark text-light">
+                        <!-- Header du modal -->
+                        <div class="modal-header">
+                            <p class="modal-title h5" id="loakModalLabel">Lo'ak</p>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <!-- Body du modal -->
+                        <div class="modal-body">
+                            <img src="./assets/img/loak-01.jpg" class="img-fluid rounded-3 mb-3" alt="Lo'ak">
+                            <p class="fs-5">
+                                Lo'ak est le fils cadet de Jake Sully et Neytiri. Aventurier et un peu rebelle,
+                                il aime explorer Pandora et tester ses limites. Bien qu’encore jeune,
+                                il montre déjà des qualités de courage et de loyauté envers sa famille et son clan,
+                                tout en développant son propre sens de l’indépendance.
+                            </p>
+                            <em class="">Source : Ign</em>
+                        </div>
+                        <!-- Footer du modal -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
         </div>
 
     </div>

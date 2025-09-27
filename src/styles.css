@@ -1,5 +1,9 @@
 :root {
-    --bs-primary-rgb: 150, 47, 148;
+    --bs-primary-rgb: 18, 78, 80;
+    /*turquoise*/
+    --bs-secondary-rgb: 12, 40, 77;
+    /*bleu foncé*/
+    --bs-success-rgb: 75, 45, 74;
     /*mauve*/
 }
 

@@ -7,10 +7,11 @@
     /*mauve*/
 }
 
-
 @font-face {
-    font-family: "avatarFont";
     src: url("./assets/fonts/Avatar_Water.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+    font-family: "Water";
+}
+
+.section-title {
+    font-family: "Water";
 }

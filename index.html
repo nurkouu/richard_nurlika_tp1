@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./src/styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
 
 </head>
@@ -22,8 +20,8 @@
 
     <div class="container">
         <!-- Mini intro -->
-        <div class="row mt-4 bg-success rounded-3 p-3">
-            <div class="col-lg-8 col-md-6 offset-md-3 offset-lg-2 text-center fs-6">
+        <div class="row mt-4 bg-success rounded-3 p-3 section-text">
+            <div class="col-lg-8 col-md-6 offset-md-3 offset-lg-2 text-center fs-6 ">
                 <em>Avatar : The way of the water</em> reprend l’histoire de Jake et Neytiri, mais cette fois ils ont
                 une famille. À cause des humains, ils doivent quitter leur foyer et apprendre à vivre avec un clan qui
                 vit au bord de l’océan. Le film parle surtout de famille, de survie et de la façon dont les Na’vi
@@ -35,13 +33,13 @@
 
         <!-- Section Lieux + Description -->
         <div class="row mt-5 bg-primary rounded-3 p-3 d-flex d-lg-block justify-content-md-center">
-            <div class="col-lg-1 col-md-2 offset-md-1 text-uppercase px-0 rounded-3 fs-5 section-title">
+            <div class="col-lg-1 col-md-2 offset-md-1 px-0 rounded-3 fs-5 section-title">
                 Lieux
             </div>
         </div>
 
 
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center section-text">
             <div class="col-5 mt-5 ms-3 ms-auto">
                 <img src="./assets/img/pandora2.jpg" class="img-fluid rounded-3"
                     alt="Image du lieux fictif de Omaticaya (clan de la forêt, région de l’Arbre-maison)">
@@ -79,14 +77,14 @@
 
         <!-- Section personnage + Description -->
         <div class="row mt-5 bg-primary rounded-3 p-3 d-flex d-lg-block justify-content-md-center">
-            <div class="col-lg-2 col-md-3 offset-lg-1 text-uppercase px-0 rounded-3 fs-5">
+            <div class="col-lg-2 col-md-3 offset-lg-1 px-0 rounded-3 fs-5 section-title">
                 Personnages
             </div>
         </div>
 
 
         <!-- Caroussel pour les personnages -->
-        <div class="row d-flex justify-content-center ">
+        <div class="row d-flex justify-content-center section-text">
             <div class="col-8 mt-5">
 
                 <div id="avatarCarousel" class="carousel slide">
@@ -114,11 +112,11 @@
                             <img src="./assets/img/jake-03.jpg" class="d-block img-fluid w-100 rounded-3"
                                 alt="Image de Jake Sully">
                             <div class="carousel-caption bg-secondary rounded-3 w-50 mx-auto p-2">
-                                <p class="h5 text-light d-md-none d-lg-block">Jake (Majake) Sully</p>
+                                <p class="h5 text-light d-md-none d-lg-block">Jake Sully</p>
                                 <em class="text-light d-md-none d-lg-block">Source : 4K
                                     wallpapers</em>
 
-                                <button type="button" class="btn btn-outline-info mt-2" data-bs-toggle="modal"
+                                <button type="button" class="btn btn-outline-info mt-1 mb-1" data-bs-toggle="modal"
                                     data-bs-target="#jakeModal">
                                     En savoir plus sur Jake
                                 </button>
@@ -133,7 +131,7 @@
                                 <p class="h5 text-light d-md-none d-lg-block">Neytiri</p>
                                 <em class="text-light d-md-none d-lg-block">Source : Prime Video</em>
 
-                                <button type="button" class="btn btn-outline-info mt-2" data-bs-toggle="modal"
+                                <button type="button" class="btn btn-outline-info mt-1 mb-1" data-bs-toggle="modal"
                                     data-bs-target="#neytiriModal">
                                     En savoir plus sur Neytiri
                                 </button>
@@ -147,7 +145,7 @@
                                 <p class="h5 text-light d-md-none d-lg-block">Neteyam</p>
                                 <em class="text-light d-md-none d-lg-block">Source : DeviantArt</em>
 
-                                <button type="button" class="btn btn-outline-info mt-2" data-bs-toggle="modal"
+                                <button type="button" class="btn btn-outline-info mt-1 mb-1" data-bs-toggle="modal"
                                     data-bs-target="#neteyamModal">
                                     En savoir plus sur Neteyam
                                 </button>
@@ -160,7 +158,7 @@
                                 <p class="h5 text-light d-md-none d-lg-block">Lo'ak</p>
                                 <em class="text-light d-md-none d-lg-block">Source : JoBlo</em>
 
-                                <button type="button" class="btn btn-outline-info mt-2" data-bs-toggle="modal"
+                                <button type="button" class="btn btn-outline-info mt-1 mb-1" data-bs-toggle="modal"
                                     data-bs-target="#loakModal">
                                     En savoir plus sur Lo'ak
                                 </button>
@@ -173,7 +171,7 @@
                                 <p class="h5 text-light d-md-none d-lg-block">Kiri</p>
                                 <em class="text-light d-md-none d-lg-block">Source : Mashable</em>
 
-                                <button type="button" class="btn btn-outline-info mt-2" data-bs-toggle="modal"
+                                <button type="button" class="btn btn-outline-info mt-1 mb-1" data-bs-toggle="modal"
                                     data-bs-target="#kiriModal">
                                     En savoir plus sur Kiri
                                 </button>
@@ -186,7 +184,7 @@
                                 <p class="h5 text-light d-md-none d-lg-block">Tuk</p>
                                 <em class="text-light d-md-none d-lg-block">Source : Vanity Fair</em>
 
-                                <button type="button" class="btn btn-outline-info mt-2" data-bs-toggle="modal"
+                                <button type="button" class="btn btn-outline-info mt-1 mb-1" data-bs-toggle="modal"
                                     data-bs-target="#tukModal">
                                     En savoir plus sur Tuk
                                 </button>
@@ -199,7 +197,7 @@
                                 <p class="h5 text-light d-md-none d-lg-block">Spider</p>
                                 <em class="text-light d-md-none d-lg-block">Source : D23</em>
 
-                                <button type="button" class="btn btn-outline-info mt-2" data-bs-toggle="modal"
+                                <button type="button" class="btn btn-outline-info mt-1 mb-1" data-bs-toggle="modal"
                                     data-bs-target="#spiderModal">
                                     En savoir plus sur Spider
                                 </button>
@@ -215,7 +213,7 @@
                                 <em class="text-light d-md-none d-lg-block">Source : The Hollywood
                                     Reporter</em>
 
-                                <button type="button" class="btn btn-outline-info mt-2" data-bs-toggle="modal"
+                                <button type="button" class="btn btn-outline-info mt-1 mb-1" data-bs-toggle="modal"
                                     data-bs-target="#quaritchModal">
                                     En savoir plus sur Quaritch
                                 </button>
@@ -237,12 +235,12 @@
             </div>
 
             <!-- Modal pour Jake -->
-            <div class="modal fade" id="jakeModal" tabindex="-1" aria-labelledby="jakeModalLabel" aria-hidden="true">
+            <div class="modal fade section-text" id="jakeModal" tabindex="-1" aria-labelledby="jakeModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content bg-dark text-light">
                         <!-- Header du modal -->
-                        <div class="modal-header">
-                            <p class="modal-title h5" id="jakeModalLabel">Jake Sully</p>
+                        <div class="modal-header section-text-plus">
+                            <p class="modal-title h5" id="jakeModalLabel">Jake (Majake) Sully</p>
                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                                 aria-label="Close"></button>
                         </div>
@@ -274,8 +272,8 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content bg-dark text-light">
                         <!-- Header du modal -->
-                        <div class="modal-header">
-                            <p class="modal-title h5" id="neytiriModalLabel">Neytiri</p>
+                        <div class="modal-header section-text-plus">
+                            <p class="modal-title h5" id="neytiriModalLabel ">Neytiri</p>
                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                                 aria-label="Close"></button>
                         </div>
@@ -307,7 +305,7 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content bg-dark text-light">
                         <!-- Header du modal -->
-                        <div class="modal-header">
+                        <div class="modal-header section-text-plus">
                             <p class="modal-title h5" id="neteyamModalLabel">Neteyam</p>
                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                                 aria-label="Close"></button>
@@ -341,7 +339,7 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content bg-dark text-light">
                         <!-- Header du modal -->
-                        <div class="modal-header">
+                        <div class="modal-header section-text-plus">
                             <p class="modal-title h5" id="loakModalLabel">Lo'ak</p>
                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                                 aria-label="Close"></button>
@@ -374,7 +372,7 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content bg-dark text-light">
                         <!-- Header du modal -->
-                        <div class="modal-header">
+                        <div class="modal-header section-text-plus">
                             <p class="modal-title h5" id="kiriModalLabel">Kiri</p>
                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                                 aria-label="Close"></button>
@@ -406,7 +404,7 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content bg-dark text-light">
                         <!-- Header du modal -->
-                        <div class="modal-header">
+                        <div class="modal-header section-text-plus">
                             <p class="modal-title h5" id="tukModalLabel">Tuk</p>
                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                                 aria-label="Close"></button>
@@ -438,7 +436,7 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content bg-dark text-light">
                         <!-- Header du modal -->
-                        <div class="modal-header">
+                        <div class="modal-header section-text-plus">
                             <p class="modal-title h5" id="spiderModalLabel">Spider</p>
                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                                 aria-label="Close"></button>
@@ -471,7 +469,7 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content bg-dark text-light">
                         <!-- Header du modal -->
-                        <div class="modal-header">
+                        <div class="modal-header section-text-plus">
                             <p class="modal-title h5" id="quaritchModalLabel">Colonel Quaritch</p>
                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                                 aria-label="Close"></button>
@@ -505,7 +503,7 @@
 
         <!-- Section critiques -->
         <div class="row mt-5 bg-primary rounded-3 p-3 d-flex d-lg-block justify-content-md-center">
-            <div class="col-lg-1 col-md-2 offset-lg-1 text-uppercase px-0 rounded-3 text-bg-primary fs-5">
+            <div class="col-lg-1 col-md-2 offset-lg-1 px-0 rounded-3 text-bg-primary fs-5 section-title">
                 Critiques
             </div>
         </div>
@@ -513,7 +511,7 @@
 
 
         <!-- critique négative -->
-        <div class="row mt-5 d-flex align-items-center justify-content-center">
+        <div class="row mt-5 d-flex align-items-center justify-content-center section-text">
 
             <div class="col-10 col-md-4 mb-3 mb-md-0">
                 <img src="./assets/img/avt1.jpg" class="img-fluid rounded-3"
@@ -535,7 +533,7 @@
 
 
         <!-- critique positive -->
-        <div class="row d-flex align-items-center justify-content-center mt-5">
+        <div class="row d-flex align-items-center justify-content-center mt-5 section-text">
 
             <div class="col-10 col-md-4 mb-3 mb-md-0">
                 <img src="./assets/img/famille-sully.jpg" class="img-fluid rounded-3"
@@ -559,8 +557,8 @@
     </div>
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <footer class="bg-primary p-4 mt-4">
-        <p class="d-flex justify-content-md-start justify-content-lg-center mb-0">
+    <footer class="bg-primary p-4 mt-4 ">
+        <p class="d-flex justify-content-md-start justify-content-lg-center mb-0 section-text">
             2025 © Critiques Avatar : Way of the Water
         </p>
     </footer>

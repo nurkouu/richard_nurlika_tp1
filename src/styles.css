@@ -8,10 +8,28 @@
 }
 
 @font-face {
-    src: url("./assets/fonts/Avatar_Water.ttf") format("truetype");
+    src: url("../assets/fonts/Avatar_Water.ttf") format("truetype");
     font-family: "Water";
+}
+
+@font-face {
+    src: url("../assets/fonts/Aubrey-Regular.ttf") format("truetype");
+    font-family: "Aubrey";
+}
+
+@font-face {
+    src: url("../assets/fonts/CaesarDressing-Regular.ttf") format("truetype");
+    font-family: "Caesar";
 }
 
 .section-title {
     font-family: "Water";
+}
+
+.section-text {
+    font-family: "Aubrey";
+}
+
+.section-text-plus {
+    font-family: "Caesar";
 }
